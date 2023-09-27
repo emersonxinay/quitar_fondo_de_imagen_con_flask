@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Resultado</title>
+</head>
+
+<body>
+  <h1>Resultado</h1>
+  <h2>Imagen Procesada (Fondo Eliminado)</h2>
+  <img src="{{ url_for('uploads', filename=processed_image) }}" alt="Imagen Procesada" width="400">
+  <br><br>
+  <a href="/">Volver</a>
+</body>
+
+</html>

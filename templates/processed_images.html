@@ -1,0 +1,35 @@
+{% extends "base.html" %} {% block main %}
+<div class="container">
+  <h1 class="mt-4">Imágenes Procesadas</h1>
+  <div class="row">
+    {% for image in processed_images %}
+    <div class="col-md-6 mb-4">
+      <div class="card">
+        <img
+          src="{{ url_for('uploads', filename='original_' + image.split('_')[1]) }}"
+          alt="Imagen Original"
+          class="card-img-top"
+        />
+        <div class="card-body">
+          <h5 class="card-title">Imagen Original</h5>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6 mb-4">
+      <div class="card">
+        <img
+          src="{{ url_for('uploads', filename=image) }}"
+          alt="Imagen Procesada"
+          class="card-img-top"
+        />
+        <div class="card-body">
+          <h5 class="card-title">Imagen Procesada</h5>
+        </div>
+      </div>
+    </div>
+
+    {% endfor %}
+  </div>
+  <a href="/" class="btn btn-primary mt-4">Volver</a>
+</div>
+{% endblock %}

@@ -1,0 +1,17 @@
+ /* Estilo para el botón de carga de archivos */
+ .custom-file-input {
+  color: white; /* Cambia el color del texto */
+  background-color: #1229bb; /* Cambia el color de fondo */
+  border: 2px solid #3498db; /* Cambia el color del borde */
+  padding: 5px 10px; /* Añade espacio alrededor del texto */
+  border-radius: 5px; /* Añade esquinas redondeadas */
+  cursor: pointer; /* Cambia el cursor al pasar por encima */
+}
+
+/* Estilo para el texto del botón de carga de archivos */
+.custom-file-label {
+  color: white; /* Cambia el color del texto */
+  background-color: #3498db; /* Cambia el color de fondo */
+  border: 2px solid #3498db; /* Cambia el color del borde */
+  border-radius: 5px; /* Añade esquinas redondeadas */
+}
