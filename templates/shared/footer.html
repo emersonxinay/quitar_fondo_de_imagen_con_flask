@@ -1,34 +1,35 @@
 <footer class="footer bg-dark text-light mt-5 text-center">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-12">
-        <p>&copy; Emerson Espinoza</p>
-      </div>
-    </div>
-
-    <div class="row">
-      <div class="col-md-12">
-        <div class="row">
-          <div class="d-flex">
-            <h1>Faltan</h1>
-            <div id="countdown">
-              <span class="h2 text-primary" id="days">00</span> días
-              <span class="h2 text-primary" id="hours">00</span> horas
-              <span class="h2 text-primary" id="minutes">00</span> minutos
-              <span class="h2 text-primary" id="seconds">00</span> segundos
-            </div>
-            <h1>para Navidad</h1>
+  <div class="container d-flex flex-column justify-content-center">
+      <div class="row">
+          <div class="col-md-12">
+              <p>&copy; Estudiantes Liceo Industrial - Código Futuro </p>
+              <img src="{{url_for('static', filename='img/logo_codigofuturo.png')}}" class="img-fluid ${3|rounded-top,rounded-right,rounded-bottom,rounded-left,rounded-circle,|}" alt=""> 
           </div>
-        </div>
       </div>
-    </div>
-    <!-- Mostrar GIF de Navidad durante el día de Navidad -->
-    {% if is_christmas %}
-    <div class="row">
-      <div class="col-md-12">
-        <img src="{{ url_for('static', filename='img/feliz_navidad.gif') }}" alt="Feliz Navidad" />
+
+      <div class="row">
+          <div class="col-md-12">
+              <div class="row">
+                  <div class="d-flex justify-content-center align-items-center">
+                      <h1>Faltan</h1>
+                      <div id="countdown">
+                          <span class="h2 text-primary" id="days">00</span> días
+                          <span class="h2 text-primary" id="hours">00</span> horas
+                          <span class="h2 text-primary" id="minutes">00</span> minutos
+                          <span class="h2 text-primary" id="seconds">00</span> segundos
+                      </div>
+                      <h1>para Navidad</h1>
+                  </div>
+              </div>
+          </div>
       </div>
-    </div>
-    {% endif %}
+      <!-- Mostrar GIF de Navidad durante el día de Navidad -->
+      {% if is_christmas %}
+      <div class="row">
+          <div class="col-md-12">
+              <img src="{{ url_for('static', filename='img/feliz_navidad.gif') }}" alt="Feliz Navidad" />
+          </div>
+      </div>
+      {% endif %}
   </div>
 </footer>
